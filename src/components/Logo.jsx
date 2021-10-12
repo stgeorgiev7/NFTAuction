@@ -1,17 +1,19 @@
 import React from 'react';
+import * as defaultLogo from '../assets/images/logo.svg';
+import * as mutedLogo from '../assets/images/logo-muted.svg';
 
 const Logo = (props) => {
-    let image = '';
+    let src = '';
 
-    if (props.type === 'default' || props.type === null) {
-        image = '/assets/images/logo.svg';
+    if (props.type === 'default' || props.type === null || props.type === undefined) {
+        src = defaultLogo.default.src;
     } else if(props.type === 'muted') {
-        image = '/assets/images/logo-muted.svg';
+        src = mutedLogo.default.src;
     };
 
     return (
         <div>
-           <image></image>
+           <img src={src}/>
         </div>
     );
 };

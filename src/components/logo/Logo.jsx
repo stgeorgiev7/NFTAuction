@@ -1,6 +1,6 @@
 import React from 'react';
-import * as defaultLogo from '../assets/images/logo.svg';
-import * as mutedLogo from '../assets/images/logo-muted.svg';
+import * as defaultLogo from './images/logo.svg';
+import * as mutedLogo from './images/logo-muted.svg';
 
 const Logo = (prop) => {
     let src = '';
@@ -12,9 +12,7 @@ const Logo = (prop) => {
     };
 
     return (
-        <div>
            <img src={src}/>
-        </div>
     );
 };
 

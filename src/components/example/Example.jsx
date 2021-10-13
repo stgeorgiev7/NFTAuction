@@ -11,7 +11,7 @@ export default function Copyright() {
       <Container className={classNames(styles.container)} maxWidth="xl">
         <Paper className={classNames(styles.paper)}>
         
-        <Logo type={undefined}/>
+        <Logo type={'type'} />
         <Logo type={'muted'}/>
           <Link href="/about" color="secondary">
             

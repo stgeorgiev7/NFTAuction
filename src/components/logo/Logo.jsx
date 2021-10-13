@@ -1,15 +1,12 @@
 import React from 'react';
 
-
-const Logo = (type) => {
+const Logo = (prop) => {
     let src = './images/logo.svg';
 
-    if (type.type === 'muted') {
+    if (prop.type === 'muted') {
         src = './images/logo-muted.svg';
-    } else {
-        src = './images/logo.svg';
     };
-
+    
     return (
            <img src={src}/>
     );

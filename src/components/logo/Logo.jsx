@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Logo = (prop) => {
-    let src = '';
 
-    if (prop.type === 'muted') {
+const Logo = (type) => {
+    let src = './images/logo.svg';
+
+    if (type.type === 'muted') {
         src = './images/logo-muted.svg';
     } else {
         src = './images/logo.svg';

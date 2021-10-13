@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Logo = (prop) => {
+const Logo = (type) => {
     let src = '';
 
-    if (prop.type === 'default' || prop.type === null || prop.type === undefined) {
+    if (type.mode === 'default' || type.mode === null || type.mode === undefined) {
         src = './images/logo.svg';
-    } else if(prop.type === 'muted') {
+    } else if(type.mode === 'muted') {
         src = './images/logo-muted.svg';
     };
 

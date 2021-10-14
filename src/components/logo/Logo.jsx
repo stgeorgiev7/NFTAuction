@@ -9,8 +9,8 @@ const Logo = ({ type }) => {
     };
     
     return (
-           <img src={src}/>
+        <img src={src}/>
     );
-};
+}
 
 export default Logo;

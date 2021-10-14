@@ -12,7 +12,7 @@ export default function Copyright() {
         <Paper className={classNames(styles.paper)}>
         
         <Logo type />
-        <Logo type={'muted'}/>
+        <Logo type='muted'/>
           <Link href="/about" color="secondary">
             
           </Link>

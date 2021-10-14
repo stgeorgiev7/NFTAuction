@@ -1,6 +1,6 @@
 import React from 'react';
 
-const logo = ({ type }) => {
+export default function Logo ({ type }){
     
     let src = './images/logo.svg';
     
@@ -12,5 +12,3 @@ const logo = ({ type }) => {
         <img src={src}/>
     );
 }
-
-export default logo;

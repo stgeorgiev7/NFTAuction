@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Logo = ({ type }) => {
+    
     let src = './images/logo.svg';
     
     if (type === 'muted') {

@@ -11,7 +11,7 @@ import { Grid } from '@mui/material';
 //     color: 'white'
 // });
 
-export default function Header() {
+export default function Head() {
     return (
         <Grid container spacing={5} className={classNames(styles.gridContainer)}>
             <Grid item xs={12}  md={4}>

@@ -1,7 +1,7 @@
 @use "../../styles/colors";
 
 .wrapper {
-  padding: 100px;
+  // padding: 100px;
   background-color: colors.$primary_main;
 }
 
@@ -12,11 +12,7 @@
 }
 
 .paper {
-  max-width: 350px;
-  width: 100%;
   font-size: 10rem;
   position: relative;
-  top: 180px;
   text-align: center;
-  
 }

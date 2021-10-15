@@ -1,1 +1,11 @@
 @use "../../styles/colors";
+
+.gridContainer {
+    background-color: colors.$background_paper;
+    justify-content: center
+};
+
+.whiteButton {
+    color: red;
+    border: 3px solid red
+}

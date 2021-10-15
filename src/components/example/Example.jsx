@@ -8,10 +8,11 @@ import Header from "../header/Header";
 export default function Copyright() {
   return (
     <div className={classNames(styles.wrapper)}>
+        <Header />
+
       <Container className={classNames(styles.container)} maxWidth="xl">
 
         <Paper className={classNames(styles.paper)}>
-          <Header />
 
           <Link href="/about" color="secondary">
 

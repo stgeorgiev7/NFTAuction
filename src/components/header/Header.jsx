@@ -11,11 +11,6 @@ import { ButtonBase } from '@mui/material';
 import { Grid } from '@mui/material';
 import { ClassNames } from '@emotion/react';
 
-
-// const WhiteButton = styled(Button)({
-//     color: 'white'
-// });
-
 export default function Head() {
     return (
         <Grid container spacing={5} className={classNames(styles.gridContainer)}

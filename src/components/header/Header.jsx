@@ -6,7 +6,6 @@ import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 import { Input } from '@mui/material';
 import { InputAdornment } from '@mui/material';
-import { InputBase } from '@mui/material/InputBase';
 import { ButtonBase } from '@mui/material';
 import { Grid } from '@mui/material';
 import { ClassNames } from '@emotion/react';

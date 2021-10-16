@@ -4,9 +4,9 @@ import { Badge } from '@mui/material';
 import defaultAvatar from './image/avatar.png';
 import badgeImg from './image/verified.svg';
 
-export default function Avatar({ url, size, verified }) {
+export default function Avatar({ url, size={width:90, height:90}, verified=false }) {
 
-    // const [avatarPic, setAvatar] = useState(url ? url : defaultAvatar.src);
+    const [avatarPic, setAvatar] = useState(url ? url : defaultAvatar.src);
     // const [avatarSize, setSize] = useState(size ? size : { width: 90, height: 90 });
     const [verifiedAvatar, setVerified] = useState(verified? badgeImg.src:'');
 
@@ -16,7 +16,7 @@ export default function Avatar({ url, size, verified }) {
         anchorOrigin={{vertical:'bottom', horizontal:'right'}}
         badgeContent={<img src={verifiedAvatar}></img>}>
             <AvatarDiv
-                src={url}
+                src={avatarPic}
                 alt='Avatar'
                 sx={size}>
 
@@ -25,9 +25,3 @@ export default function Avatar({ url, size, verified }) {
 
     );
 };
-
-Avatar.defaultProps={
-    url: defaultAvatar.src,
-    size: {width:90, height:90},
-    verified: false
-}

@@ -4,12 +4,13 @@ import Link from "../link/Link";
 import styles from "./Example.module.scss";
 import classNames from "classnames";
 import Head from "../header/Header";
+import Avatar from '../avatar/Avatar';
 
 export default function Copyright() {
   return (
     <div className={classNames(styles.wrapper)}>
       <Head/>
-
+      <Avatar url={customImg.src} verified={true}/>
       <Container className={classNames(styles.container)} maxWidth="xl">
 
         <Paper className={classNames(styles.paper)}>

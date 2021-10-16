@@ -10,7 +10,7 @@ export default function Copyright() {
   return (
     <div className={classNames(styles.wrapper)}>
       <Head/>
-      <Avatar />
+      <Avatar verified={true}/>
       <Container className={classNames(styles.container)} maxWidth="xl">
 
         <Paper className={classNames(styles.paper)}>

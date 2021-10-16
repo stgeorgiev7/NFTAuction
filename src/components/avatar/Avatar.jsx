@@ -12,7 +12,7 @@ export default function Avatar({ url, size = { width: 90, height: 90 }, verified
 
     const [avatarPic, setAvatar] = useState(url ? url : defaultAvatar.src);
     // const [avatarSize, setSize] = useState(size ? size : { width: 90, height: 90 });
-    const [verifiedAvatar, setVerified] = useState(verified ? <img src={badgeImg.src} className={classNames(styles.badge)}></img> : '');
+    const [verifiedAvatar, setVerified] = useState(verified ? <img src={badgeImg.src} className='badge'></img> : '');
 
     return (
         <Badge

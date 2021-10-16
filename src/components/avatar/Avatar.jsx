@@ -6,8 +6,8 @@ import badgeImg from './image/verified.svg';
 
 export default function Avatar({ url, size, verified }) {
 
-    const [avatarPic, setAvatar] = useState(url ? url : defaultAvatar.src);
-    const [avatarSize, setSize] = useState(size ? size : { width: 90, height: 90 });
+    // const [avatarPic, setAvatar] = useState(url ? url : defaultAvatar.src);
+    // const [avatarSize, setSize] = useState(size ? size : { width: 90, height: 90 });
     const [verifiedAvatar, setVerified] = useState(verified? badgeImg.src:'');
 
     return (
@@ -16,12 +16,18 @@ export default function Avatar({ url, size, verified }) {
         anchorOrigin={{vertical:'bottom', horizontal:'right'}}
         badgeContent={<img src={verifiedAvatar}></img>}>
             <AvatarDiv
-                src={avatarPic}
+                src={url}
                 alt='Avatar'
-                sx={avatarSize}>
+                sx={size}>
 
             </AvatarDiv>
         </Badge>
 
     );
 };
+
+Avatar.defaultProps={
+    url: defaultAvatar.src,
+    size: {width:90, height:90},
+    verified: false
+}
